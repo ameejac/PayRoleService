@@ -16,3 +16,8 @@ insert into employee_payrole values('ameeja','10000','2020-2-20'),('pradeep','12
 ---uc4 retrieve all the data is added to the payroleservice ---
 select * from employee_payrole
 
+---uc5 retrieve the perticual data---
+select name ,startdate from employee_payrole where name ='ameeja';
+select * from employee_payrole where startdate between cast('2010-2-3'as date )and getdate ();
+
+
