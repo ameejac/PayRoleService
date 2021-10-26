@@ -24,4 +24,12 @@ select * from employee_payrole where startdate between cast('2010-2-3'as date )a
 alter table employee_payrole add gender varchar (9);
 update employee_payrole set gender = 'm' where name ='pradeep';
 
+---uc7 using database functions---
+select SUM(salary) as TotalSalary,gender from employee_payrole group by gender;
+select AVG(Salary) as AverageSalary from employee_payrole group by gender;
+select count(salary) as TotalSalary,gender from employee_payrole group by gender;
+select Min(salary) as MinSalary,gender from employee_payrole group by Gender;
+select Max(salary) as MaxSalary,gender from employee_payrole group by Gender;
+
+
 
