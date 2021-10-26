@@ -20,4 +20,8 @@ select * from employee_payrole
 select name ,startdate from employee_payrole where name ='ameeja';
 select * from employee_payrole where startdate between cast('2010-2-3'as date )and getdate ();
 
+---uc6 add gender in employee payrole table---
+alter table employee_payrole add gender varchar (9);
+update employee_payrole set gender = 'm' where name ='pradeep';
+
 
