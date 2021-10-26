@@ -13,3 +13,6 @@ startdate date not null
 ---uc3 crud operation ---
 insert into employee_payrole values('ameeja','10000','2020-2-20'),('pradeep','12000','2020-3-4'),('mahi','12345','2019-3-16');
 
+---uc4 retrieve all the data is added to the payroleservice ---
+select * from employee_payrole
+
